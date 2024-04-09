@@ -5,16 +5,18 @@ function EmployeeForm({ fetchEmployees }) {
   const [email, setEmail] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     try {
-      await fetch('https://661470032fc47b4cf27c554f.mockapi.io/employees', {
+      await fetch('https://661470032fc47b4cf27c554f.mockapi.io/Employees', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ name, email }),
       });
+
       fetchEmployees();
+
       setName('');
       setEmail('');
     } catch (error) {
@@ -39,3 +41,4 @@ function EmployeeForm({ fetchEmployees }) {
 }
 
 export default EmployeeForm;
+

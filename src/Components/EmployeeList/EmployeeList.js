@@ -1,5 +1,5 @@
 import React from 'react';
-import EmployeeItem from './Components/EmployeeItem/employeeItem';
+import EmployeeItem from '../EmployeeItem/EmployeeItem';
 
 function EmployeeList({ employees, fetchEmployees }) {
   const deleteEmployee = async (id) => {
@@ -26,3 +26,5 @@ function EmployeeList({ employees, fetchEmployees }) {
 }
 
 export default EmployeeList;
+
+
