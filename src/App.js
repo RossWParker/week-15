@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import EmployeeList from './Components/EmployeeList/employeeList';
+import EmployeeForm from './Components/EmployeeForm/employeeForm';
 
 function App() {
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    fetchEmployees();
+  }, []);
+
+  const fetchEmployees = async () => {
+    try {
+      const response = await fetch('https://661470032fc47b4cf27c554f.mockapi.io/employees');
+      const data = await response.json();
+      setEmployees(data);
+    } catch (error) {
+      console.error('Error fetching employees:', error);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Employee Management</h1>
+      <EmployeeForm fetchEmployees={fetchEmployees} />
+      <EmployeeList employees={employees} fetchEmployees={fetchEmployees} />
     </div>
   );
 }
 
 export default App;
+
+
+// import React from 'react';
+// import EmployeeList from './components/EmployeeList';
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>Employee Management</h1>
+//       <EmployeeList />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
