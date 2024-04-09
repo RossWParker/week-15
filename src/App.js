@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import EmployeeList from './Components/EmployeeList/EmployeeList';
 import EmployeeForm from './Components/EmployeeForm/EmployeeForm';
+import './App.css';
+
 
 
 function App() {

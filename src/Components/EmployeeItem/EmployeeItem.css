@@ -1,12 +1,9 @@
-/* EmployeeItem.css */
-
 .employee-item-container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    
   }
   
   .name-email-box {
@@ -14,21 +11,18 @@
     padding: 10px;
     margin-right: 10px;
     background-color: #f9f9f9;
-    
   }
   
   .name-email {
     color: #333;
     font-weight:bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
   }
   
   .buttons-container {
     display: flex;
     flex-direction: column;
     align-items:right;
-    
   }
   
   .button {
@@ -77,27 +71,24 @@
     background-color: #0056b3;
   }
   
-  .edit-button:hover, .edit-button:hover {
+  .edit-button {
     background-color: #0056b3;
-  }
-  .app-container {
-    text-align: center;
+    width: 200px;
     
   }
   
-
-body {
+  
+  .app-container {
+    text-align: center;
+  }
+  
+  body {
     text-align: center;
     background-color: lightblue;
     font-family: cursive;
     font-weight: 500;
   }
-
   
-
-
-
-
   .employee-item {
     display:flex;
     justify-content:center;
@@ -113,6 +104,5 @@ body {
     display:block;
   }
   
-  .Add-Employee {
-    background-color: red;
-  }
+  
+  
