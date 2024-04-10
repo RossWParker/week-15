@@ -52,7 +52,7 @@ h2 {
 
 
 button[type="submit"] {
-  margin-left: 0px; /* Adjust the value to move the button as desired */
+  margin-left : 0px; /* Adjust the value to move the button as desired */
 }
 
 label {
@@ -63,6 +63,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"] {
   margin-left: 15px; /* Adjust the value to move the inputs to the left */
+ 
 }
 
 .employee-item {
