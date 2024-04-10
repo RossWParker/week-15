@@ -84,6 +84,6 @@ input[type="email"] {
   color: #333; /* Adjust text color as needed */
 }
 
-ul { padding: 0 }
+ ul { padding: 0 } /*removes padding to center listed names  */
 
 
