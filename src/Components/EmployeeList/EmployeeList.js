@@ -15,7 +15,12 @@ function EmployeeList({ employees, fetchEmployees }) {
 
   return (
     <div>
-      <h2>Employees</h2>
+
+      <br></br>
+      
+      <br></br>
+
+      <h3>ProFinish Renovations Employees</h3>
       <ul>
         {employees.map(employee => (
           <EmployeeItem key={employee.id} employee={employee} deleteEmployee={deleteEmployee} />

@@ -42,6 +42,47 @@
 }
 
 
+h3 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+button[type="submit"] {
+  margin-left: 0px; /* Adjust the value to move the button as desired */
+}
+
+label {
+  margin-left: -60px; /* Adjust the value to move the labels and inputs to the left */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  margin-left: 15px; /* Adjust the value to move the inputs to the left */
+}
+
+.employee-item {
+  list-style: none; /* Remove default list styles */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.employee-details {
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.employee-details div {
+  margin-bottom: 5px; /* Add space between name, phone, and email */
+}
+
+.employee-details span {
+  font-weight: bold; /* Make names, phones, and emails bold */
+  color: #333; /* Adjust text color as needed */
+}
+
 
 
 
