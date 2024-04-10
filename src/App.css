@@ -68,7 +68,7 @@ input[type="email"] {
 
 .employee-item {
   list-style: none; /* Remove default list styles */
-  padding: 10px 0; /* Adjust padding as needed */
+  padding:10px 0; /* Adjust padding as needed */
 }
 
 .employee-details {
@@ -84,6 +84,6 @@ input[type="email"] {
   color: #333; /* Adjust text color as needed */
 }
 
-
+ul { padding: 0 }
 
 
